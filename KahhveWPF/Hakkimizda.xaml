@@ -1,0 +1,112 @@
+﻿<Window x:Class="KahhveWPF.Hakkimizda"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KahhveWPF"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        Icon="./sources/favicon.png"
+        WindowStartupLocation="CenterScreen"
+        Title="Hakkimizda" Height="1000" Width="1920">
+    <ScrollViewer CanContentScroll="True">
+        <Grid Height="3850">
+            <StackPanel Margin="375,10,0,0" Orientation="Horizontal" Panel.ZIndex="100" Background="White" HorizontalAlignment="Left" Width="1043" Height="88" VerticalAlignment="Top">
+                <Image HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Source="sources/kahhve_logo.png" Cursor="Hand" MouseDown="kahhveler_MouseDown"/>
+                <Label x:Name="lblKahhveler" Content="KAHHVELER" HorizontalAlignment="Left" Margin="0,27,0,0" VerticalAlignment="Top" Style="{DynamicResource Jaldi}" FontSize="16" Height="29" Width="108" Foreground="#FF5E4732" Cursor="Hand" MouseDown="kahhvelerPage_MouseDown"/>
+                <Label Content="EKİPMAN &amp; AKSESUARLAR" HorizontalAlignment="Left" Margin="0,27,0,0" VerticalAlignment="Top" Style="{DynamicResource Jaldi}" FontSize="16" Height="29" Width="214" Foreground="#FF5E4732" Cursor="Hand"/>
+                <Label Content="TANIŞMA SETLERİ" HorizontalAlignment="Left" Margin="0,27,0,0" VerticalAlignment="Top" Style="{DynamicResource Jaldi}" FontSize="16" Height="29" Width="139" Foreground="#FF5E4732" Cursor="Hand"/>
+                <Label Content="MARKALAR" HorizontalAlignment="Left" Margin="0,27,0,0" VerticalAlignment="Top" Style="{DynamicResource Jaldi}" FontSize="16" Height="29" Width="103" Foreground="#FF5E4732" Cursor="Hand"/>
+                <Label Content="KÜLTÜR" HorizontalAlignment="Left" Margin="0,27,0,0" VerticalAlignment="Top" Style="{DynamicResource JaldiBold}" FontSize="16" Height="29" Width="89" Foreground="#FFC65800" Cursor="Hand" FontWeight="Bold"/>
+                <Label Content="HEDİYELİKLER" HorizontalAlignment="Left" Margin="0,27,0,0" VerticalAlignment="Top" Style="{DynamicResource Jaldi}" FontSize="16" Height="29" Width="115" Foreground="#FF5E4732" Cursor="Hand"/>
+                <Label Content="GİRİŞ" HorizontalAlignment="Left" Margin="0,27,0,0" VerticalAlignment="Top" Style="{DynamicResource Jaldi}" FontSize="16" Height="29" Width="57" Foreground="#FF5E4732" Cursor="Hand" MouseDown="giris_MouseDown"/>
+                <Image HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="40" Margin="0,16,0,0" Source="sources/search.png" Cursor="Hand"/>
+                <Image HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="40" Margin="0,16,0,0" Source="sources/favori.png" Cursor="Hand"/>
+                <Image HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="40" Margin="0,16,0,0" Source="sources/sepet.png" Cursor="Hand"/>
+
+            </StackPanel>
+            <Image HorizontalAlignment="Left" Height="654" VerticalAlignment="Top" Width="1897" Margin="0,98,0,0" Source="sources/hakkimizdaBanner.png"/>
+            <Image HorizontalAlignment="Left" Height="740" VerticalAlignment="Top" Width="1897" Margin="0,752,0,0" Source="sources/hakkimizdaText.png"/>
+            <Image HorizontalAlignment="Left" Height="410" VerticalAlignment="Top" Width="1897" Margin="0,1490,0,0" Source="sources/founders.png"/>
+            <Image HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="1897" Margin="0,1900,0,0" Source="sources/kahvesever.png"/>
+            <Grid Margin="0,2200,0,0" Height="807" VerticalAlignment="Top">
+                <Image HorizontalAlignment="Left" Height="782" VerticalAlignment="Top" Width="1897" Source="sources/bannerAfterFooter.png"/>
+            </Grid>
+            <Image HorizontalAlignment="Left" Height="247" VerticalAlignment="Top" Width="618" Margin="0,3007,0,0" Source="sources/blogBanner.png"/>
+            <Image HorizontalAlignment="Left" Height="247" VerticalAlignment="Top" Width="1260" Margin="637,3007,0,0" Source="sources/bultenAbone.png"/>
+            <TextBox HorizontalAlignment="Left" Height="53" Margin="657,3155,0,0" TextWrapping="Wrap" Text="mail adresini girin" VerticalAlignment="Top" Width="849" BorderBrush="#FFC65800" FontFamily="Roboto" FontSize="18" VerticalContentAlignment="Center" Foreground="Gray"/>
+            <Image HorizontalAlignment="Left" Height="47" VerticalAlignment="Top" Width="89" Margin="1521,3161,0,0" Source="sources/aboneOl.png" Cursor="Hand" MouseDown="aboneOl_MouseDown"/>
+            <Grid Margin="0,3280,0,0" Background="#FFEBEBEB" Height="569" VerticalAlignment="Top">
+                <Label Content="KAHHVE.COM" Style="{DynamicResource Jaldi}" FontSize="21" Foreground="#FFC65800" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="380,0,1365,468" Height="38" VerticalAlignment="Bottom"/>
+                <Label x:Name="lblHakkimizda" Content="Hakkımızda" Style="{DynamicResource Jaldi}" FontSize="16" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="380,0,1365,440" Height="28" VerticalAlignment="Bottom"/>
+                <Label Content="Sipariş Takip" Style="{DynamicResource Jaldi}" FontSize="16" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="380,0,1365,412" Height="28" VerticalAlignment="Bottom"/>
+                <Label Content="Ödeme Seçenekleri" Style="{DynamicResource Jaldi}" FontSize="16" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="380,0,1365,384" Height="28" VerticalAlignment="Bottom"/>
+                <Label Content="Sık Sorulan Sorular" Style="{DynamicResource Jaldi}" FontSize="16" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="380,0,1365,356" Height="28" VerticalAlignment="Bottom"/>
+                <Label Content="Gizlilik Politikası" Style="{DynamicResource Jaldi}" FontSize="16" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="380,0,1365,328" Height="28" VerticalAlignment="Bottom"/>
+                <Label Content="Yasal Uyarı" Style="{DynamicResource Jaldi}" FontSize="16" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="380,0,1365,300" Height="28" VerticalAlignment="Bottom"/>
+                <Label Content="Mesafeli Satış" Style="{DynamicResource Jaldi}" FontSize="16" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="380,0,1365,272" Height="28" VerticalAlignment="Bottom"/>
+                <Label Content="Cayma Hakkı" Style="{DynamicResource Jaldi}" FontSize="16" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="380,0,1365,244" Height="28" VerticalAlignment="Bottom"/>
+                <Label Content="KATEGORİLER" Style="{DynamicResource Jaldi}" FontSize="21" Foreground="#FFC65800" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="554,0,1191,468" Height="38" VerticalAlignment="Bottom"/>
+                <Label Content="Kahveler" Style="{DynamicResource Jaldi}" FontSize="16" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="554,0,1191,440" Height="28" VerticalAlignment="Bottom"/>
+                <Label Content="Kapsül Kahveler" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="554,0,1191,412"/>
+                <Label Content="Kahve Demleme" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="554,0,1191,384"/>
+                <Label Content="Moka Pot" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="554,0,1191,356"/>
+                <Label Content="French Press" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="554,0,1191,328"/>
+                <Label Content="Öğütücüler" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="554,0,1191,300"/>
+                <Label Content="Filtreler" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="554,0,1191,272"/>
+                <Label Content="Soğuk Kahve" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="554,0,1191,244"/>
+                <Label Content="Yedek Parçalar" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="554,0,1191,216"/>
+                <Label Content="Aksesuarlar" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="554,0,1191,188"/>
+                <Label Content="Barista Ekipmanları" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="554,0,1191,160"/>
+                <Label Content="Kettle" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="554,0,1191,132"/>
+                <Label Content="Chemex" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="554,0,1191,104"/>
+                <Label Content="Hario" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="554,0,1191,76"/>
+                <Label Content="Aeropress" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="554,0,1191,48"/>
+                <Label Content="Termos&amp;Mug" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="554,0,1191,20"/>
+                <Label Content="MARKALAR" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="21" Height="38" Foreground="#FFC65800" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="730,0,1015,468"/>
+                <Label Content="Able" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="730,0,1015,440"/>
+                <Label Content="Aeropress" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="886,0,859,440"/>
+                <Label Content="American Press" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="730,0,1015,412"/>
+                <Label Content="Baratza" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="886,0,859,412"/>
+                <Label Content="BeanPlus" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="730,0,1015,384"/>
+                <Label Content="Bialetti" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="886,0,859,384"/>
+                <Label Content="Bodum" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="730,0,1015,356"/>
+                <Label Content="Bravilor Bonamat" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="886,0,859,356"/>
+                <Label Content="İLETİŞİM" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="21" Height="38" Foreground="#FFC65800" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="1156,0,589,468"/>
+                <Label Content="5A GRUP MAĞAZACILIK BİLİŞİM&#xD;&#xA;TEKNOLOJİ VE DANIŞMANLIK A.Ş." VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="47" Foreground="#FFC65800" Cursor="Hand" HorizontalAlignment="Center" Width="250" Margin="1156,0,491,421"/>
+                <Label Content="Evren Sitesi E Blok İçerenköy / Ataşehir / İstanbul" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="362" Margin="1156,0,379,393"/>
+                <Label Content="info@kahhve.com" Style="{DynamicResource Jaldi}" FontSize="16" Foreground="#FFC65800" Cursor="Hand" HorizontalAlignment="Center" Width="140" Margin="1156,0,601,365" Height="28" VerticalAlignment="Bottom"/>
+                <Label Content="0 850 522 04 94" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="128" Margin="1296,0,473,365"/>
+                <Label Content="BİZİ TAKİP EDİN" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="21" Height="38" Foreground="#FFC65800" Cursor="Hand" HorizontalAlignment="Center" Width="164" Margin="1156,0,577,313"/>
+                <Image HorizontalAlignment="Left" Height="60" VerticalAlignment="Bottom" Width="276" Margin="1156,0,0,253" Source="sources/sosyalMedya.png"/>
+                <Label Content="Brawi" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="730,0,1015,328"/>
+                <Label Content="Caffe Fresco" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="886,0,859,328"/>
+                <Label Content="Caffe Vergnano" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="730,0,1015,300"/>
+                <Label Content="Cafflano" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="886,0,859,300"/>
+                <Label Content="Chemex" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="730,0,1015,272"/>
+                <Label Content="Coffee Sapiens" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="886,0,859,272"/>
+                <Label Content="Coffeemamma" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="730,0,1015,244"/>
+                <Label Content="Coffeerem" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="886,0,859,244"/>
+                <Label Content="Cool Beans" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="730,0,1015,216"/>
+                <Label Content="Fellow" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="886,0,859,216"/>
+                <Label Content="Handground" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="730,0,1015,188"/>
+                <Label Content="Hario" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="886,0,859,188"/>
+                <Label Content="Illy" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="730,0,1015,160"/>
+                <Label Content="Julius Meinl" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="886,0,859,160"/>
+                <Label Content="KahhveCom" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="730,0,1015,132"/>
+                <Label Content="Kronotrop" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="886,0,859,132"/>
+                <Label Content="Kruve" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="730,0,1015,104"/>
+                <Label Content="Motta" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="886,0,859,104"/>
+                <Label Content="Overdose Coffee" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="730,0,1015,76"/>
+                <Label Content="Pedrini" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="886,0,859,76"/>
+                <Label Content="Petra" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="730,0,1015,48"/>
+                <Label Content="Porlex" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="886,0,859,48"/>
+                <Label Content="Puly Caff" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="730,0,1015,20"/>
+                <Label Content="Punctum Coffee" VerticalAlignment="Bottom" Style="{DynamicResource Jaldi}" FontSize="16" Height="28" Foreground="#FF603813" Cursor="Hand" HorizontalAlignment="Center" Width="152" Margin="886,0,859,20"/>
+
+
+            </Grid>
+
+        </Grid>
+    </ScrollViewer>
+</Window>

@@ -1,0 +1,14 @@
+﻿<Application x:Class="KahhveWPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:KahhveWPF"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style x:Key="Jaldi">
+            <Setter Property="TextElement.FontFamily" Value=".\fonts\Jaldi-Regular.ttf"></Setter>
+        </Style>
+        <Style x:Key="JaldiBold">
+            <Setter Property="TextElement.FontFamily" Value=".\fonts\Jaldi-Bold.ttf"></Setter>
+        </Style>
+    </Application.Resources>
+</Application>
