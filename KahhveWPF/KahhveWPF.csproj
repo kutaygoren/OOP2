@@ -143,7 +143,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="coffeeSapiens.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Hakkimizda.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HarioPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -163,8 +171,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="coffeeSapiens.xaml.cs">
+      <DependentUpon>coffeeSapiens.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Hakkimizda.xaml.cs">
       <DependentUpon>Hakkimizda.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HarioPage.xaml.cs">
+      <DependentUpon>HarioPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Kahhveler.xaml.cs">
       <DependentUpon>Kahhveler.xaml</DependentUpon>

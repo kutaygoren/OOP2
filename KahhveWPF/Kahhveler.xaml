@@ -27,7 +27,7 @@
             </StackPanel>
             <Image HorizontalAlignment="Left" Height="193" VerticalAlignment="Top" Width="1897" Margin="0,98,0,0" Source="sources/kahhvelerBanner.png"/>
             <Label Content="MARKA" Margin="124,366,1645,0" VerticalAlignment="Top" Style="{DynamicResource JaldiBold}" FontSize="32" Height="42" Foreground="#FFC65800" Cursor="Hand" FontWeight="Bold" HorizontalAlignment="Center" Width="128"/>
-            <Label Content="Hario(4)" HorizontalAlignment="Left" Margin="124,413,0,0" VerticalAlignment="Top" Style="{DynamicResource Jaldi}" FontSize="16" Height="29" Width="214" Foreground="#FF5E4732" Cursor="Hand"/>
+            <Label Content="Hario(4)" HorizontalAlignment="Left" Margin="124,413,0,0" VerticalAlignment="Top" Style="{DynamicResource Jaldi}" FontSize="16" Height="29" Width="214" Foreground="#FF5E4732" Cursor="Hand" MouseDown="hario_MouseDown"/>
             <Image x:Name="image1" HorizontalAlignment="Left" Height="338" Margin="616,366,0,0" VerticalAlignment="Top" Width="338"/>
             <Image HorizontalAlignment="Left" Height="338" Margin="616,366,0,0" VerticalAlignment="Top" Width="338" Source="sources/border.png" Cursor="Hand"/>
             <Image x:Name="image2" HorizontalAlignment="Left" Height="338" Margin="1012,366,0,0" VerticalAlignment="Top" Width="338"/>
@@ -178,13 +178,17 @@
 
 
             </Grid>
-            <Label Content="Coffee Sapiens(1)" HorizontalAlignment="Left" Margin="124,442,0,0" VerticalAlignment="Top" Style="{DynamicResource Jaldi}" FontSize="16" Height="29" Width="214" Foreground="#FF5E4732" Cursor="Hand"/>
+            <Label Content="Coffee Sapiens(1)" HorizontalAlignment="Left" Margin="124,442,0,0" VerticalAlignment="Top" Style="{DynamicResource Jaldi}" FontSize="16" Height="29" Width="214" Foreground="#FF5E4732" Cursor="Hand" MouseDown="sapiens_MouseDown"/>
             <Label Content="Bialetti(2)" HorizontalAlignment="Left" Margin="124,471,0,0" VerticalAlignment="Top" Style="{DynamicResource Jaldi}" FontSize="16" Height="29" Width="214" Foreground="#FF5E4732" Cursor="Hand"/>
             <Label Content="KahhveCom(1)" HorizontalAlignment="Left" Margin="124,500,0,0" VerticalAlignment="Top" Style="{DynamicResource Jaldi}" FontSize="16" Height="29" Width="214" Foreground="#FF5E4732" Cursor="Hand"/>
             <Label Content="Urban Grind(1)" HorizontalAlignment="Left" Margin="124,529,0,0" VerticalAlignment="Top" Style="{DynamicResource Jaldi}" FontSize="16" Height="29" Width="214" Foreground="#FF5E4732" Cursor="Hand"/>
             <Label Content="Cool Beans(1)" HorizontalAlignment="Left" Margin="124,558,0,0" VerticalAlignment="Top" Style="{DynamicResource Jaldi}" FontSize="16" Height="29" Width="214" Foreground="#FF5E4732" Cursor="Hand"/>
             <Label Content="Caffe Fresco(1)" HorizontalAlignment="Left" Margin="124,587,0,0" VerticalAlignment="Top" Style="{DynamicResource Jaldi}" FontSize="16" Height="29" Width="214" Foreground="#FF5E4732" Cursor="Hand"/>
             <Label Content="Aeropress(1)" HorizontalAlignment="Left" Margin="124,616,0,0" VerticalAlignment="Top" Style="{DynamicResource Jaldi}" FontSize="16" Height="29" Width="214" Foreground="#FF5E4732" Cursor="Hand"/>
+            <ComboBox x:Name="Sıralama" HorizontalAlignment="Left" Margin="1709,322,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White" Foreground="#FF878787" SelectionChanged="Sıralama_SelectionChanged">
+                <ComboBoxItem Content="Fiyat Artan" HorizontalAlignment="Left" Width="118"/>
+            </ComboBox>
+            <Label Content="Sıralama:" HorizontalAlignment="Left" Margin="1641,322,0,0" VerticalAlignment="Top" Style="{DynamicResource Jaldi}" FontSize="14" Height="29" Width="68" Foreground="#FF5E4732" Cursor="Hand"/>
 
         </Grid>
 
